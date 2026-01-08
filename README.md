@@ -10,7 +10,13 @@
 4. *Stratified K Fold Cross Validation.* (2025, July 15). GeeksforGeeks. Retrieved January 8, 2026, from https://www.geeksforgeeks.org/machine-learning/stratified-k-fold-cross-validation/ 
 5. *XGBoost Parameters.* (2025, July 23). GeeksforGeeks. Retrieved January 8, 2026, from https://www.geeksforgeeks.org/machine-learning/xgboost-parameters/ 
 
--- Diagrams
+![Description](IDE_results.PNG)
+<!-- <p align="center">
+  <img src="IDE_results.PNG" width="400" alt="Diagram">
+</p>
+
+<p align="center"><b>Resulting Diagrams</b></p>
+
 ![Description](confusion_matrix_summary.PNG)
 ![Description](precision_recall_curve.PNG)
 ![Description](most_important_words_bargraph.PNG)
