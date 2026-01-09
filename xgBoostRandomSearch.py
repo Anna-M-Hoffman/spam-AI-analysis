@@ -50,7 +50,7 @@ param_dist = {
 }
 
 # Stratified K-Fold CV (cross-validation) - how well unseen data is predicted
-cv = StratifiedKFold(n_splits=5,       # Data divided into three folds, testing multiple splits
+cv = StratifiedKFold(n_splits=5,       # Data divided into five folds, testing multiple splits
                      shuffle=True,     # Each fold has a good mix of classes (ham and spam)
                      random_state=42)  # reproducibility
 
