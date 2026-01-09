@@ -16,7 +16,7 @@ df = df[['v1', 'v2']]  # keep only ham/spam and text
 le = LabelEncoder()
 y = le.fit_transform(df['v1'])  # LabelEncoder transforms categorical labels to numerical form
 
-# Vectorize email text using TF-IDF
+# Vectorize SMS text using TF-IDF
 # TF or Term Frequency measures how often a word appears in a document.
 # IDF or Inverse Document Frequency reduces common words weight across data while increasing the weight of rare words.
 vectorizer = TfidfVectorizer(max_features=5000)  # max_features limits vocabulary to 5000 most important words
@@ -74,7 +74,7 @@ print("Best parameters:", random_search.best_params_)
 print("Best CV score:", random_search.best_score_)
 
 y_pred = random_search.predict(X_test)               # outputs the predicted class labels (0, 1) for ham/spam
-y_probs = random_search.predict_proba(X_test)[:, 1]  # takes the probability of spam for each email
+y_probs = random_search.predict_proba(X_test)[:, 1]  # takes the probability of spam for each message
 
 report = classification_report(y_test, y_pred, target_names=le.classes_, output_dict=True)
 
