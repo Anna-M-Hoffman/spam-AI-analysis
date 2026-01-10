@@ -10,7 +10,7 @@ The <b>confusion matrix</b> shows: ("Precision-Recall Curve - ML", 2025, para. 1
   <li>Correctly classified ham (True Negative)</li>
   <li>Misclassified spam (False Negative)</li>
 </ul>
-The <b>precision recall curve</b> helps determine the positive class (in this case spam) where recall (x-axis) is the true positive rate of spam and precision (y-axis) is how many spam were correctly predicted ("Precision-Recall Curve - ML", 2025, paras. 1-4).
+The <b>precision recall curve</b> helps determine the positive class (in this case spam) where recall (x-axis) is the true positive rate of spam and precision (y-axis) is how many predicted spam were correct ("Precision-Recall Curve - ML", 2025, paras. 1-4).
 <br /> 
 <br />
 The best cross validation score is given for 5-folds in this model, evaluated as a percentage ("Cross Validation in Machine Learning", 2025, para. 31).
