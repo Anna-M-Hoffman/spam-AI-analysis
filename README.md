@@ -1,13 +1,13 @@
 <p align="center"><b>Machine Learning Spam Message Classifier</b></p>
 <br />
 <p align="center">
-  <img src="most_important_words_bargraph.PNG" width="600" alt="Most Important Words">
+  <img src="images/most_important_words_bargraph.PNG" width="900" alt="Most Important Words">
 </p>
 This project builds, tunes, and evaluates a <b>spam message classifier using XGBoost</b> and TF-IDF text features, then visualizes how well the model performs and which words matter most. XGBoost involves "[...] decision trees as its base learners and combines them sequentially to improve the model’s performance. Each new tree is trained to correct the errors made by the previous tree and this process is called boosting" ("XGBoost", 2025, para. 1).  The labels ham and spam are converted to numbers 0 and 1, XGBoost runs a binary classifier for spam vs ham and configures it to optimize log loss ("divergence of predicted probability with the actual label") and be reproducible with a fixed random seed ("ML | Log Loss [...]", 2025, para. 1). This model's hyperparameters are tuned with <b>RandomizedSearchCV</b> and <b>Stratified K-Fold cross-validation</b>. Stratified K-Fold cross-validation makes sure the training and testing sets are in the same proportions as to full dataset - good for imbalanced data ("Stradified [...]", 2025, paras. 1, 8). Randomized search hyperparameter tuning can have less wait time than grid search, because random selections of the ranges specified are tried versus all combinations ("Comparing Randomized [...]", 2025, paras. 3, 7). 
 <br /> 
 <br />
 <p align="center">
-  <img src="IDE_results.PNG" width="600" alt="IDE results">
+  <img src="images/IDE_results.PNG" width="900" alt="IDE results">
 </p>
 <br /> 
 <br />
@@ -20,7 +20,7 @@ The <b>confusion matrix</b> shows: ("Precision-Recall Curve - ML", 2025, para. 1
 </ul>
 
 <p align="center">
-  <img src="confusion_matrix_summary.PNG" width="600" alt="Confusion Matrix">
+  <img src="images/confusion_matrix_summary.PNG" width="600" alt="Confusion Matrix">
 </p>
 <br /> 
 <br />
@@ -28,7 +28,7 @@ The <b>precision recall curve</b> helps determine the positive class (in this ca
 <br /> 
 <br />
 <p align="center">
-  <img src="precision_recall_curve.PNG" width="600" alt="Precision Recall Curve">
+  <img src="images/precision_recall_curve.PNG" width="600" alt="Precision Recall Curve">
 </p>
 <br /> 
 <br />
